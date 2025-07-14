@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios CECyTEM San Felipe del Progreso</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fef9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #004225;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .separador {
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      border: 1px solid #d4dcd6;
+    }
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-top: 0;
+      font-size: 28px;
+      border-bottom: 2px solid #c4c4c4;
+      padding-bottom: 10px;
+    }
+    .grid-servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .servicio {
+      background-color: #f1f8f1;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #cde0cc;
+      transition: transform 0.2s ease;
+    }
+    .servicio:hover {
+      transform: scale(1.02);
+    }
+    .servicio p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><img src="cecytem-logo.png" height="100">Servicios del Plantel</h1>
+  <div class="separador"></div>
+</header>
+
+<main>
+  <h2>CECyTEM San Felipe del Progreso</h2>
+  <p style="font-size:17px; line-height:1.6;">
+    El plantel brinda diversos servicios que apoyan el aprendizaje, desarrollo y bienestar de los estudiantes.
+  </p>
+
+  <div class="grid-servicios">
+    <div class="servicio">
+      <p><strong>Biblioteca:</strong> Espacio con material bibliográfico y recursos digitales para consulta y estudio.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Becas:</strong> Programas de apoyo económico que fomentan la continuidad y conclusión de estudios.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Orientación Educativa:</strong> Asesoría personalizada para acompañar el desarrollo académico y personal.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Seguro Facultativo:</strong> Cobertura médica básica para atención en instituciones públicas de salud.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Seguro Contra Accidentes:</strong> Protección adicional en caso de incidentes ocurridos durante actividades escolares.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Actividades deportivas y culturales:</strong> Talleres y eventos que promueven la formación integral y el sano esparcimiento.</p>
+    </div>
+    <div class="servicio">
+      <p><strong>Cafetería:</strong> Servicio de alimentos y bebidas para estudiantes y personal.</p>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

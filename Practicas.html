@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prácticas HTML</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8f5e9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 100px);
+    }
+
+    .menu {
+      width: 20%;
+      background-color: #f1f8e9;
+      padding: 20px;
+      overflow-y: auto;
+      border-right: 2px solid #c8e6c9;
+    }
+
+    .menu:last-child {
+      border-left: 2px solid #c8e6c9;
+      border-right: none;
+    }
+
+    .menu h2 {
+      font-size: 20px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .menu a {
+      display: block;
+      background-color: #a5d6a7;
+      color: #1b5e20;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .menu a:hover {
+      background-color: #81c784;
+      transform: scale(1.03);
+    }
+
+    .viewer {
+      flex: 1;
+      background-color: white;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 98%;
+      height: 96%;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Scrollbar estilizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #81c784;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e8f5e9;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>
+    <img src="cecytem-logo.png" height="60" style="vertical-align: middle; margin-right: 10px;" />
+    Mis Prácticas de Páginas Web 💻🌿
+  </h1>
+</header>
+
+<div class="container">
+  <!-- Menú Izquierdo -->
+  <div class="menu">
+    <h2>Prácticas 1 - 7</h2>
+    <a href="Practica1.html" target="visor">Práctica 1</a>
+    <a href="Practica2.html" target="visor">Práctica 2</a>
+    <a href="Practica3.html" target="visor">Práctica 3</a>
+    <a href="Practica4.html" target="visor">Práctica 4</a>
+    <a href="Practica5.html" target="visor">Práctica 5</a>
+    <a href="Practica6.html" target="visor">Práctica 6</a>
+    <a href="Practica7.html" target="visor">Práctica 7</a>
+  </div>
+
+  <!-- Visor central -->
+  <div class="viewer">
+    <iframe name="visor" title="Vista de práctica"></iframe>
+  </div>
+
+  <!-- Menú Derecho -->
+  <div class="menu">
+    <h2>Prácticas 8 - 14</h2>
+    <a href="Practica8.html" target="visor">Práctica 8</a>
+    <a href="Practica9.html" target="visor">Práctica 9</a>
+    <a href="Practica10.html" target="visor">Práctica 10</a>
+    <a href="Practica11.html" target="visor">Práctica 11</a>
+    <a href="Practica12.html" target="visor">Práctica 12</a>
+    <a href="Practica13.html" target="visor">Práctica 13</a>
+    <a href="Prcatica14-15.html" target="visor">Práctica 14-15</a>
+  </div>
+</div>
+
+</body>
+</html>
